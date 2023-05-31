@@ -1,5 +1,5 @@
-name: CI workflow
 
+name: CI workflow
 on:
   push:
     branches: [main]
@@ -26,4 +26,6 @@ jobs:
       
       - name: Run unit tets with nose
         run: nosetests -v --with-spec --spec-color --with-coverage --cover-package=app
+
+
 
